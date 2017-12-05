@@ -1,0 +1,59 @@
+section.content
+  padding: 20px
+  box-sizing: border-box
+.add-item
+  margin: 15px 0
+.text-center
+  text-align: center !important
+.margin-auto
+  margin: auto !important
+.rounded-button
+  border-radius: 500rem !important
+.flex-row
+  width: 100%
+  display: flex
+  flex-flow: row nowrap
+.between
+  justify-content: space-between
+  align-items: center
+.vertical-center
+  vertical-align: middle !important
+.notification
+  font-size: 1rem
+  padding: 20px
+  margin: 5px 0 0 0
+  &-title
+  &-content
+textarea, select
+  color: #272b30
+  background: #fff
+  width: 100%
+  border-radius: 3px
+  resize: none
+  border: none
+  &:disabled
+    color: #272b30
+    background: #8b8e91
+input, select, textarea
+  color: #272b30 !important
+select
+  height: 38px
+.loader
+  position: fixed
+  z-index: 3
+  width: 100vw
+  height: 100vh
+  top: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.05)
+  &:after
+    content: ''
+    display: block
+    position: fixed
+    width: 100px
+    height: 100px
+    top: calc(50% - 50px)
+    left: calc(50% - 50px)
+    background: url('./loader.svg')
+    background-size: cover
+

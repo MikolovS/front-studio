@@ -1,0 +1,21 @@
+version: '2'
+services:
+
+  frontend:
+    build:
+      context: ${PROJECT_DIR}
+      dockerfile: build/web.dockerfile
+#    ports:
+#      - 8383:80
+    networks:
+      - cms
+    environment:
+      - VIRTUAL_HOST=cms.puzzland.dals.media,cms.puzzland.dev
+      - LETSENCRYPT_HOST=cms.puzzland.dals.media
+      - LETSENCRYPT_EMAIL=spirivak@gmail.com
+      - DEFAULT_HOST=cms.puzzland.dals.media
+
+networks:
+  cms:
+    external:
+      name: puzzlandcms_puzzland
